@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 
@@ -10,7 +11,7 @@ public class MethodsExercises {
 //        System.out.println(FindModOfTwo(100, 30));
 //        System.out.println(getInteger(1, 10));
         getFactor();
-        diceRoll();
+        rollDice();
     }
 
     //static Scanner in = new Scanner(System.in);
@@ -77,11 +78,20 @@ public class MethodsExercises {
     }
 
     // <------------------------- 4. -------------------------> //
-    private static void diceRoll() {
-
+    public static void rollDice(int number, int nSides) {
+        int num = 0;
+        int roll = 0;
+        Random r = new Random();
+        if (nSides >= 3) {
+            for (int i = 0; i < number; i++) {
+                roll = r.nextInt(nSides) + 1;
+                System.out.println("Roll is:  " + roll);
+                num = num + roll;
+            }
+        } else {
+            System.out.println("Error num needs to be from 3");
+        }
     }
-
-
 
 }
 
