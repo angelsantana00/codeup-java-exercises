@@ -12,17 +12,17 @@ public class Input {
 
     }
 
-//    public String getString() {
-////        System.out.println("String here: ");
-//        String userString = scanner.nextLine();
-//        return userString;
-//    }
-//
-//    public boolean yesNo() {
-////        System.out.println("Select (y/n):");
-//        String userAnswer = scanner.next();
-//        return userAnswer.equals("y");
-//    }
+    public String getString() {
+//        System.out.println("String here: ");
+        String userString = scanner.nextLine();
+        return userString;
+    }
+
+    public boolean yesNo() {
+//        System.out.println("Select (y/n):");
+        String userAnswer = scanner.next();
+        return userAnswer.equals("y");
+    }
 
     public int getInt(int min, int max) {
         System.out.println("Enter Interger: ");

@@ -14,6 +14,9 @@ public class MethodsExercises {
         rollDice();
     }
 
+    private static void rollDice() {
+    }
+
     //static Scanner in = new Scanner(System.in);
 
     // <---------------------- 1. ---------------------------> //
