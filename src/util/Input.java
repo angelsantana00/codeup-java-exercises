@@ -42,4 +42,6 @@ public class Input {
         }
     }
 
+    public double getDouble() {
+    }
 }
