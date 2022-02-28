@@ -1,8 +1,8 @@
 package shapes;
-
 import util.Input;
 
 public class CircleApp {
+    private static int circle;
     public static void main(String[] args) {
         Input input = new Input();
 

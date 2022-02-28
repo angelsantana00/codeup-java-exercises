@@ -1,10 +1,10 @@
 package util;
-
 import java.util.Scanner;
 
 public class Input {
 
-    public Scanner scanner;
+    private static Scanner scanner;
+//    public Scanner scanner;
 
     public Input() {
         this.scanner = new Scanner(System.in);
@@ -42,6 +42,9 @@ public class Input {
         }
     }
 
-    public double getDouble() {
+    public static double getDouble() {
+        return scanner.nextDouble();
+
+//
     }
 }
