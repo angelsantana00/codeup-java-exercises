@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class ArrayLecture {
 
@@ -45,6 +46,23 @@ public class ArrayLecture {
 
         //<---------------------------------------------->//
 
+                int i = 0;
+                int EvenSum = 0, OddSum = 0;
+                int[] numbs =  {1, 2, 3, 4, 5, 6, 7, 8};
+
+                for(i = 0; i < 20; i++)
+                {
+                    if(numbs[i] % 2 == 0)
+                    {
+                        EvenSum = EvenSum + numbs[i];
+                    }
+                    else
+                    {
+                        OddSum = OddSum + numbs[i];
+                    }
+                }
+                System.out.println("\n Sum of Even = " + EvenSum);
+                System.out.println(" Sum of Odd = " + OddSum);
 
 
     } // public static void main
