@@ -67,11 +67,11 @@ public class GradesApplication {
                 System.out.println("Name: " + currentStudent.getName() + " - GitHub Username: " + userKey);
                 System.out.println("Current Average: " + currentStudent.getGradeAverage());
             } else {
-                System.out.println("Sorry, no student found with the GitHub username of " + userKey + ".");
+                System.out.println("Sorry, no student found with the GitHub username of " + userKey);
             }
             System.out.println("Would you like to see another student?");
         } while (input.yesNo());
-        System.out.println("Thank You! Goodbye!");
+        System.out.println("Goodbye! Have a wonderful day!");
 
     }
 
