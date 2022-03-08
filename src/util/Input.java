@@ -8,8 +8,6 @@ public class Input {
 
     public Input() {
         this.scanner = new Scanner(System.in);
-
-
     }
 
     public String getString() {
@@ -34,7 +32,7 @@ public class Input {
             return getInt(min, max);
         }
         if (userInt < min || userInt > max) {
-            System.out.println("Out of Range");
+            System.out.println("Out of Range Again");
             return getInt(min, max);
         } else {
             System.out.println("In Range");
@@ -42,9 +40,31 @@ public class Input {
         }
     }
 
-    public static double getDouble() {
-        return scanner.nextDouble();
+    public double getDouble(double min, double max) {
+        double userDouble;
+        System.out.println("Give me an decimal: ");
+        try {
+            userDouble = Double.parseDouble(scanner.nextLine());
+        } catch (NumberFormatException e) {
+            System.out.println("Not a Decimal");
+            return getDouble(min, max);
+        }
+        if (userDouble < min || userDouble > max) {
+            System.out.println("Try again!");
+            return getDouble(min, max);
+        } else {
+            System.out.println("There we go!");
+            return userDouble;
+        }
+    }
 
-//
+    public double getDouble() {
+        System.out.println("Give me a decimal: ");
+
+        try {
+            return Double.parseDouble(scanner.nextLine());
+        } catch (NumberFormatException e) {
+            return getDouble();
+        }
     }
 }
