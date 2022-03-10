@@ -21,8 +21,8 @@ public class MethodsExercises {
 
     // <---------------------- 1. ---------------------------> //
 
-//    public static int AdditionMethod(int number, int numberTwo) {
-//        return (number + numberTwo);
+    public static int AdditionMethod(int number, int numberTwo) {
+        return (number + numberTwo);
 //
 //    }
 //

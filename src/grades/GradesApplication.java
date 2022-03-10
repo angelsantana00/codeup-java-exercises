@@ -2,7 +2,6 @@ package grades;
 
 import util.Input;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 
 public class GradesApplication {
@@ -60,7 +59,7 @@ public class GradesApplication {
                 System.out.print("|" + key + "| ");
             }
             System.out.println("What student would you like to see more info on?\n");
-            String userKey = input.getString();
+            String userKey = input.getString("Please Enter a 10-Digit Phone Number: ");
 
             if (students.containsKey(userKey)) {
                 Student currentStudent = students.get(userKey);
