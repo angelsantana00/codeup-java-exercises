@@ -5,6 +5,10 @@ import util.Input;
 import java.util.ArrayList;
 import java.util.List;
 
+import static util.FileHelper.slurp;
+
+
+
 public class ContactManager {
 
     private static Input in = new Input();
@@ -38,6 +42,20 @@ public class ContactManager {
     }
 
     public static void deleteContact() {
+        String searchToDelete = in.getString("Type a Contact to search and delete: ");
+        for (String d: contacts) {
+            if (searchToDelete.equalsIgnoreCase(d.split(" ")[0])) {
+                contacts.remove(d);
+                return;
+            }
+        }
+        System.out.println("Nothing Found");
+        deleteContact();
+    }
+
+    public static void main(String[] args) {
+
+        contacts = slurp(CONTACT_FILE);
 
     }
 
