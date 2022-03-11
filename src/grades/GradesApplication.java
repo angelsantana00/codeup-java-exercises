@@ -69,7 +69,7 @@ public class GradesApplication {
                 System.out.println("Sorry, no student found with the GitHub username of " + userKey);
             }
             System.out.println("Would you like to see another student?");
-        } while (input.yesNo());
+        } while (input.yesNo("Continue work?"));
         System.out.println("Goodbye! Have a wonderful day!");
 
     }
