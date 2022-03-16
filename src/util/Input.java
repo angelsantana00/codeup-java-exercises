@@ -18,6 +18,10 @@ public class Input {
         return userAnswer.equals("y");
     }
 
+    public double getDouble() {
+        return 0;
+    }
+
 //    public int getInt(String s, int min, int max) {
 //        System.out.println("Enter Interger: ");
 //        int userInt;
