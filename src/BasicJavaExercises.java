@@ -96,9 +96,16 @@ class BasicJavaExercises {
     static class Exercise8 {
         public static void main(String[] args) {
             System.out.println("    J    a   v      v   a\n" +
-                    "    J   a  a   v   v   a a\n" +
-                    "J   J  aaaaaa   V V   aaaaaa\n" +
-                    " JJJ  a      a   V   a      a");
+                               "    J   a  a   v   v   a a\n" +
+                               "J   J  aaaaaa   V V   aaaaaa\n" +
+                               " JJJ  a      a   V   a      a");
+        }
+    }
+
+    //TODO: 9. Write a Java program to compute the specified expressions and print the output.
+    static class Exercise9 {
+        public static void main(String[] args) {
+            System.out.println((25.5 * 3.5 - 3.5 * 3.5) / (40.5 - 4.5));
         }
     }
 
