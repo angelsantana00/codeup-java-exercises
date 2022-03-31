@@ -195,9 +195,13 @@ class BasicJavaExercises {
 
             System.out.println("The Area is: " + (num1 * num2));
             System.out.println("The Perimeter is: " + ((num1 * 2) + (num2 * 2)));
-
-
         }
+    }
+
+    //TODO: Write a Java program to print an American flag on the screen.
+
+    static class Exercise14 {
+
     }
 
 
