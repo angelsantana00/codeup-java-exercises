@@ -220,7 +220,6 @@ class BasicJavaExercises {
             System.out.println("==============================================");
             System.out.println("==============================================");
         }
-
     }
 
     //TODO: Write a Java program to swap two variables.
@@ -237,6 +236,20 @@ class BasicJavaExercises {
             a = b;
             b = temp;
             System.out.println("After swapping : a, b = "+a+", "+ + b);
+        }
+    }
+
+    //TODO: Write a Java program to print a face.
+
+    static class Exercise16 {
+
+        public static void main(String[] args)
+        {
+            System.out.println(" +\"\"\"\"\"+ ");
+            System.out.println("[| o o |]");
+            System.out.println(" |  ^  | ");
+            System.out.println(" | '-' | ");
+            System.out.println(" +-----+ ");
         }
 
     }
