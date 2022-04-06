@@ -345,6 +345,11 @@ class BasicJavaExercises {
         }
     }
 
+    //TODO:
+    static class Exercise19 {
+
+    }
+
 
 
 
